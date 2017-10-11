@@ -55,12 +55,12 @@ public class LocationsApplication {
 	
 	@Value("${keyStore}")
 	private String keyStoreName;
-	
+
 	@Value("${keyStorePassword}")
 	private String keyStorePassword;
-	
+
 	@Autowired
-    private ResourceLoader resourceLoader;
+	private ResourceLoader resourceLoader;
 	
 	@RequestMapping(value = "/cert/location", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<?> certlocation() {
